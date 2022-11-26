@@ -1,0 +1,8 @@
+<h2> {{scramble}}</h2>
+
+{% for line in solutions%}
+{% for key,val in line.items()%}
+<p> {{key}} {{val[0]}} <b>{{val[1]}}</b></p>
+{% endfor %}
+<hr>
+{% endfor %}
